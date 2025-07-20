@@ -4,7 +4,7 @@ import CartItem from "./CartItem";
 function Cart() {
     const cart = useCartStore(cartSelector);
     return (
-        <section className="flex flex-col justify-center bg-white rounded-lg self-start col-span-1 md:col-span-2 p-4 space-y-4">
+        <section className="flex flex-col justify-center bg-white rounded-lg self-start col-span-1 md:col-span-2 p-4 space-y-4 order-1 md:order-2">
             <h2 className="text-2xl font-semibold">Your Cart</h2>
             <ul className="flex flex-col justify-center space-y-2">
                 {
