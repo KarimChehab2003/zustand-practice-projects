@@ -8,6 +8,8 @@ function Layout() {
                 <nav className="space-y-2">
                     <NavLink to="/" end className={({ isActive }) => isActive ? "block px-4 py-2 bg-[#2A9D8F] rounded transition-colors duration-200"
                         : "block px-4 py-2 hover:bg-[#2A9D8F]/60 rounded"}>QuickCart - Awful UI</NavLink>
+                    <NavLink to="/theme-toggler" className={({ isActive }) => isActive ? "block px-4 py-2 bg-[#2A9D8F] rounded transition-colors duration-200"
+                        : "block px-4 py-2 hover:bg-[#2A9D8F]/60 rounded"}>Theme Magic</NavLink>
                 </nav>
             </aside>
             <div className="flex-1">

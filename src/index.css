@@ -1,1 +1,55 @@
 @import "tailwindcss";
+
+.inter {
+  font-family: "Mulish", sans-serif;
+}
+
+.theme-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite both;
+}
+
+.blob1 {
+  aspect-ratio: 1;
+  clip-path: shape(
+    from 87.02% 33.98%,
+    curve to 86.24% 65.04% with 98.48% 50%,
+    curve to 57.69% 83.89% with 73.99% 80.09%,
+    curve to 23.71% 79.44% with 41.4% 87.7%,
+    curve to 9% 51.44% with 6.01% 71.18%,
+    curve to 27.24% 24.4% with 11.98% 31.69%,
+    curve to 59.03% 17.53% with 42.49% 17.11%,
+    curve to 87.02% 33.98% with 75.56% 17.95%
+  );
+}
+
+.blob2 {
+  aspect-ratio: 1;
+  clip-path: shape(
+    from 76.25% 38.48%,
+    curve to 81.96% 68.68% with 84.14% 50%,
+    curve to 59.6% 91.87% with 79.79% 87.35%,
+    curve to 30.48% 80.04% with 39.41% 96.38%,
+    curve to 18.83% 48.69% with 21.55% 63.7%,
+    curve to 27.89% 19.23% with 16.11% 33.68%,
+    curve to 54.02% 15.87% with 39.68% 4.78%,
+    curve to 76.25% 38.48% with 68.37% 26.96%
+  );
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
