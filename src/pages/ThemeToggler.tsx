@@ -16,8 +16,8 @@ function ThemeToggler() {
             {/* Card */}
             <section className={`${isDarkTheme ? "bg-white/80" : "bg-white"} p-8 max-w-lg w-full relative z-10 rounded-2xl space-y-4 transition-colors duration-300 overflow-hidden shadow-lg`}>
                 {/* More Blobs */}
-                <div className={`absolute top-10 -left-6 w-16 h-16 ${isDarkTheme ? "bg-indigo-600" : "bg-yellow-300"} animate-float blob1 transition-colors duration-300`}></div>
-                <div className={`absolute bottom-20 -right-8 w-20 h-20 ${isDarkTheme ? "bg-purple-600" : "bg-pink-300"}  blob2 animate-float transition-colors duration-300`}></div>
+                <div className={`absolute top-10 -left-6 w-16 h-16 ${isDarkTheme ? "bg-indigo-600" : "bg-yellow-300"}  animate-float rounded-full transition-colors duration-300`}></div>
+                <div className={`absolute bottom-20 -right-8 w-20 h-20 ${isDarkTheme ? "bg-purple-600" : "bg-pink-300"}  animate-float rounded-full transition-colors duration-300`}></div>
 
                 <div className="flex justify-between items-center">
                     <h1 className="text-3xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Theme Magic</h1>
